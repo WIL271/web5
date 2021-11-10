@@ -4,7 +4,7 @@ function onClick1() {
     let p = document.getElementById("proizv");
     var proizv = parseInt(g[0].value) * parseInt(g2[0].value)
     p.innerHTML = proizv;
-    let с = document.getElementById("btn1");
+    let с = document.getElementById("button1");
     return false;
 }
 function onClick2() {
