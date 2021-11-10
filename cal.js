@@ -1,4 +1,4 @@
-function f1() {
+function onClick1() {
     let g1 = document.getElementsByName("number1");
     let g2 = document.getElementsByName("number2");
     let p = document.getElementById("proizv");
@@ -7,7 +7,7 @@ function f1() {
     let с = document.getElementById("btn1");
     return false;
 }
-function f2() {
+function onClick2() {
     let g1 = document.getElementsByName("number1");
     let g2 = document.getElementsByName("number2");
     let p = document.getElementById("proizv");
