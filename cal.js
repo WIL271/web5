@@ -1,6 +1,4 @@
-function fun1() {[InternetShortcut]
-URL=https://github.com/WIL271/web5/blob/main/cal.js
-
+function fun1() {
     let f1 = document.getElementsByName("fiel1");
     let f2 = document.getElementsByName("fiel2");
     let r = document.getElementById("result");
@@ -10,8 +8,8 @@ URL=https://github.com/WIL271/web5/blob/main/cal.js
     return false;
 }
 function fun2() {
-    let f1 = document.getElementsByName("field1");
-    let f2 = document.getElementsByName("field2");
+    let f1 = document.getElementsByName("fiel1");
+    let f2 = document.getElementsByName("fiel2");
     let r = document.getElementById("result");
     r.innerHTML = None;
     f1.innerHTML = None;
