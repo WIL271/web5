@@ -1,18 +1,20 @@
-function onClick1() {
-    let g1 = document.getElementsByName("number1");
-    let g2 = document.getElementsByName("number2");
-    let p = document.getElementById("proizv");
-    var proizv = parseInt(g[0].value) * parseInt(g2[0].value)
-    p.innerHTML = proizv;
+function fun1() {[InternetShortcut]
+URL=https://github.com/WIL271/web5/blob/main/cal.js
+
+    let f1 = document.getElementsByName("field1");
+    let f2 = document.getElementsByName("field2");
+    let r = document.getElementById("result");
+    var result = parseInt(f1[0].value) * parseInt(f2[0].value)
+    r.innerHTML = result;
     let с = document.getElementById("button1");
     return false;
 }
-function onClick2() {
-    let g1 = document.getElementsByName("number1");
-    let g2 = document.getElementsByName("number2");
-    let p = document.getElementById("proizv");
-    p.innerHTML = None;
-    g1.innerHTML = None;
-    g2.innerHTML = None;
+function fun2() {
+    let f1 = document.getElementsByName("field1");
+    let f2 = document.getElementsByName("field2");
+    let r = document.getElementById("result");
+    r.innerHTML = None;
+    f1.innerHTML = None;
+    f2.innerHTML = None;
     return false;
 }
