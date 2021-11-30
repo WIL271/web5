@@ -14,7 +14,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="osnov ">
+<body class="osnov row">
 <header class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 row justify-content-center m-0">
     <div id="header" class=" row col col-12 col-md-8 align-items-end p-0">
         <div class="row align-items-end  m-0" id="header-container">
@@ -24,7 +24,7 @@
     </div>
 </header>
 
-<div class="row justify-content-center" id="topnav">
+<div class="row justify-content-center pb-5 pt-5" id="topnav">
     <div class="row col-12 col-md-8 m-0 p-0" id="navigation">
         <div class="col-md-4"><a href="#info">О нас</a></div>
         <div class="col-md-4"><a href="#contact">Контакты</a></div>
@@ -32,169 +32,21 @@
     </div>
 </div>
 
-<div  class="row justify-content-center ">
-    <div class="col-12 col-md-8 mb-5 px-2 order-1 order-md-3" id="container">
-        <h2><a id="start">Cсылки</a></h2>
-        <ol>
-            <li><a href="http://example.com">example</a></li>
-            <li><a href="https://example.com">example</a></li>
-            <li><a href="ftp://sisadmin.ru/hranilishe/1.txt">Без авторизации</a></li>
-            <li><a href="ftp://test:password@sisadmin.ru/hranilishe/1.txt">С авторизацией</a></li>
-            <li><a href="https://test.html#bottom">Ссылка на фрагмент страницы(якорь)</a></li>
-            <li><a href="#top">Ссылка на начало страницы</a></li>
-            <li><a href="https://github.com/?branch=master&repo=chat">Ссылка с двумя GET параметрами</a></li>
-            <li><a href="#anchor">Начало страницы</a><a href="#">Главная</a></li>
-            <li><a> "https://jdk.java.net/" Ссылка без href </a></li>
-            <li><a href="">Ссылка с пустым href</a></li>
-            <li><a href="https://test.com" rel="nofollow">Ссылка nofollow</a></li>
-            <li><a href="https://test.com" rel="noindex">Ссылка noindex</a></li>
-            <li>Пример абзаца для контекстной ссылки
-                <p>
-                    <a href="https://ru.lipsum.com/">Lorem Ipsum</a>Vivamus consectetur nisi nisi. Aenean vel facilisis eros. Sed tellus nibh, pellentesque at venenatis quis, viverra in urna. Quisque interdum tortor ut auctor pellentesque. Morbi ut lobortis dui. Donec eu ullamcorper nunc, a commodo quam. Vestibulum eget ipsum eget nunc fringilla suscipit eu a ipsum.
-            </li>
-            <li><a href="https://self-learning.ru/course/sql-basics?utm_source=infocomp&utm_medium=banner&utm_campaign=sqlbasics&utm_content=sidebar"><img src="Rickbaby.jpg" width="145" height="220" alt="flower"></a></li><li>
-            <img src="Rick.jpg" width="145" height="110" usemap="#navigation" alt="map">
-            <map name="navigation">
-                <area shape="circle"
-                      coords="80,80,40"
-                      href="https://www.php.net/manual/ru/book.json.php"
-                      alt="circle">
-                <area shape="rect"
-                      coords="0,0,40,40"
-                      href="https://info-comp.ru/database-normalization"
-                      alt="rectangle">
-            </map>
-        </li>
-            <li><a href="demo.html">Относительная ссылка на файл в том же каталоге</a></li>
-            <li><a href="about/contacts.html">Относительная ссылка на файл в каталоге about</a></li>
-            <li><a href="./Веб-разработка(черновик).pdf">Относительная ссылка на файл в каталоге, выше нынешнего на один</a></li>
-            <li><a href="././random.html">Относительная ссылка на файл двумя каталогами выше</a></li>
-            <li><a href="/">Сокращенная ссылка на главную</a></li>
-            <li><a href="/form.html">Сокращенная на внутреннюю</a></li>
-        </ol>
-    </div>
-
-    <div id="tbl" class="col-12 col-md-8  mb-5 px-sm-2 px-2 px-md-0 order-3 order-md-3">
-        <div class="table">
-            <h2 id="table">Таблица</h2>
-            <table>
-                <tr>
-                    <th>Первый</th>
-                    <th>Второй</th>
-                    <th>Третий</th>
-                </tr>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class=" col-12 col-md-8 mb-5 order-2 order-md-3" id="form1">
-        <h2>Форма </h2>
-        <form action="/" id="form">
-            <label>
-                Введите имя<br>
-                <input name="field-name-1" placeholder="Name">
-            </label><br>
-
-            <label>
-                Введите email:<br>
-                <input name="field-email" placeholder="test@example.com" type="email">
-            </label><br>
-
-            <label>
-                Введите дату рождения<br>
-                <input name="field-date" value="2021-09-19" type="date">
-            </label><br>
-        </form>
-
-        <form action="/" method="POST">
-            Введите пол:<br>
-            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-                Мужской</label><br>
-            <label><input type="radio" name="radio-group-1" value="Значение2">
-                Женский</label><br>
-            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-                Высшее существо</label><br>
-        </form>
-
-        <form action="/" method="POST">
-            Выберите кол-во конечностей:<br>
-            <label><input type="radio" name="radio-group-1" value="Значениие 5">
-                Нет конечностей</label><br>
-            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-                1</label>
-            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
-                2</label>
-            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
-                3</label>
-            <label><input type="radio" name="radio-group-1" value="Значение4">
-                Больше трех</label>
-        </form>
-
-        <form action="/" method="POST">
-            <label>
-                Сверхспособности:
-                <br>
-                <select size="3" multiple name="superpower[]">
-                    <option disabled>Выберите cверхспособности</option>
-                    <option value="Значение1">Бессмертие</option>
-                    <option value="Значение2" selected="selected">Левитация</option>
-                    <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
-                </select>
-            </label><br>
-
-            <label>
-                Биография:
-                <br>
-                <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
-            </label><br>
-
-            <label><input type="checkbox" checked="checked" name="check-1">
-                с контрактом ознакомлен (а)</label><br>
-            <input type="submit" value="Отправить"><br>
-        </form>
-    </div>
-
-    <div id = "menu"  class="col-xs-12 col-sm-12 col-md-12 col-lg-12 order-4 order-md-3">
-        <div id="result"></div>
-        <form  id = "cal" >
-            <input name="fiel1" type="number" placeholder="Цена" id = "fiel1" name="test_name" min="0" oninput="validity.valid||(value='');" >
-            <input name="fiel2" type="number" placeholder="Колличество" id = "fiel2" name="test_name" min="0" oninput="validity.valid||(value='');">
+<div class="row justify-content-center" >
+    <div id = "menu" class="row col-12 col-md-8 m-0 p-0">
+        <h4>Калькулятор</h4>
+        <div id="result" ></div>
+        <form class="justify-content-center" id = "cal" >
+            <input name="fiel1" type="number" placeholder="Цена" id = "fiel1" min="0" oninput="validity.valid||(value='');" >
+            <input name="fiel2" type="number" placeholder="Колличество" id = "fiel2" min="0" oninput="validity.valid||(value='');">
             <button id="btn1" onclick="return fun1()"><h3>=</h3></button>
             <button id="btn2" onclick="return fun2()"><h3>C</h3></button>
         </form>
     </div>
-
-
 </div>
-<footer>
-    <p class="bottom"><small> (c) Котельников Владислав, 2021</small></p>
+
+<footer class="navbar fixed-bottom ">
+    <a class="navbar-brand" href="#"><small>(c) Котельников Владислав, 2021</small></a>
 </footer>
+
 </body>
-</html>
