@@ -8,7 +8,7 @@
         text-decoration: underline;
     }
 
-    #navigation .col-md-4 {
+    #navigation  {
         font-size: 35px;
     }
 
@@ -28,17 +28,6 @@
         letter-spacing: 14px;
     }
 
-    table tr:nth-child(2n) {
-        background-color: #FDFDFD;
-    }
-
-    table tr:nth-child(2n+1) {
-        background-color: #91B3FB;
-    }
-
-    .body {
-        margin: 0;
-    }
 
     #navigation .col-md-4 {
         font-size: 35px;
@@ -60,16 +49,8 @@
         font-weight: bold;
     }
 
-    #container {
-        color: rgb(#FFF);
-        font-size: 14px;
-    }
-
-    table tr:nth-child(2n+1) {
-        background-color: #91B3FB;
-    }
-
-    header, #navigation, #container, .table, #form1, footer {
+    
+    header, #navigation, footer {
         background-color: #2f5687;
         border-width: thick;
         border-style: double;
@@ -78,12 +59,9 @@
     }
 
     #menu {
-        margin-left: auto;
-        margin-right: auto;
         background-color: #2f5687;
         border-width: thick;
         border-style: double;
         border-color: white;
         border-image: initial;
-        width: 960px;
     }
