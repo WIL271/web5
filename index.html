@@ -35,13 +35,12 @@
 <div class="row justify-content-center" >
     <div id = "menu" class="row col-12 col-md-8 m-0 p-0">
         <h4>Калькулятор</h4>
-        <div id="result" ></div>
-        <form class="justify-content-center" id = "cal" >
-            <input name="fiel1" type="number" placeholder="Цена" id = "fiel1" min="0" oninput="validity.valid||(value='');" >
-            <input name="fiel2" type="number" placeholder="Колличество" id = "fiel2" min="0" oninput="validity.valid||(value='');">
-            <button id="btn1" onclick="return fun1()"><h3>=</h3></button>
-            <button id="btn2" onclick="return fun2()"><h3>C</h3></button>
-        </form>
+        <div class="boarding">
+            <input type ="text" id="n1" placeholder="Количество">
+            <input type ="text" id="n2" placeholder="Цена">
+            <button id="summa">Рассчитать стоимость</button>
+        </div>
+        <p id="out">Результат:</p>
     </div>
 </div>
 
