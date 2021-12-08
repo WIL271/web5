@@ -1,18 +1,25 @@
-function fun1() {
-    let f1 = document.getElementsByName("fiel1");
-    let f2 = document.getElementsByName("fiel2");
-    let r = document.getElementById("result");
-    var result = parseInt(f1[0].value) * parseInt(f2[0].value)
-    r.innerHTML = result;
-    let с = document.getElementById("btn1");
-    return false;
+function summa(){
+    const check = /^[1-9][0-9]*$/;
+    let stm, kol, pr;
+    stm = document.getElementById("n1").value;
+    stm=parseInt(stm);
+    kol = document.getElementById("n2").value;
+    kol=parseInt(kol);
+    pr=stm*kol;
+
+    if (!check.test(stm)|| !check.test(kol)) {
+        alert('Что-то пошло не по плану...');
+        document.getElementById('out').innerHTML="Ты по-моему перепутал";
+    }
+    else{
+        document.getElementById('out').innerHTML=pr;
+    }
 }
-function fun2() {
-    let f1 = document.getElementsByName("fiel1");
-    let f2 = document.getElementsByName("fiel2");
-    let r = document.getElementById("result");
-    r.innerHTML = None;
-    f1.innerHTML = None;
-    f2.innerHTML = None;
-    return false;
-}
+
+
+window.addEventListener('DOMContentLoaded', function()  {
+    console.log("DOM fully loaded and parsed");
+
+    let buttonProiz = document.getElementById("summa");
+    buttonProiz.addEventListener("click",summa);
+})
